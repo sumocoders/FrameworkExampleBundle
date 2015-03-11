@@ -1,0 +1,9 @@
+services:
+  framework_example.listener.menu_listener:
+    class: SumoCoders\FrameworkExampleBundle\EventListener\MenuListener
+    arguments:
+      - @service_container
+    calls:
+      - [setSecurityContext, ["@security.context"]]
+    tags:
+      - { name: kernel.event_listener, event: framework_core.configure_menu, method: onConfigureMenu }
