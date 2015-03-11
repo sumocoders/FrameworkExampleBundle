@@ -1,0 +1,24 @@
+{
+  "name": "sumocoders/framework-example-bundle",
+  "type": "symfony-bundle",
+  "description": "Example bundle for our mini-framework",
+  "keywords": ["Example", "SumoCoders"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tijs Verkoyen",
+      "email": "tijs@sumocoders.be"
+    }
+  ],
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.1.*"
+  },
+  "autoload": {
+    "psr-0": { "SumoCoders\\FrameworkExampleBundle": "" }
+  },
+  "target-dir": "SumoCoders/FrameworkExampleBundle"
+}
