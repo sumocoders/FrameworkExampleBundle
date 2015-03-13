@@ -19,7 +19,7 @@
     "symfony/framework-bundle": "~2.6",
     "symfony/monolog-bundle": "~2.6",
     "sensio/framework-extra-bundle": "~3.0",
-    "phpunit/phpunit": "4.1.*"
+    "phpunit/phpunit": "4.*"
   },
   "autoload": {
     "psr-0": { "SumoCoders\\FrameworkExampleBundle": "" }

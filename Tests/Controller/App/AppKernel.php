@@ -14,8 +14,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-//            new JMS\SerializerBundle\JMSSerializerBundle($this),
-//            new FOS\RestBundle\FOSRestBundle(),
 
             new SumoCoders\FrameworkExampleBundle\SumoCodersFrameworkExampleBundle(),
         );
