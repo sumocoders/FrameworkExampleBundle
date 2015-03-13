@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
+         bootstrap="Tests/bootstrap.php"
          cacheTokens="true"
          colors="true"
          convertErrorsToExceptions="true"
@@ -11,6 +11,9 @@
          stopOnFailure="false"
          syntaxCheck="false"
 >
+    <php>
+        <server name="KERNEL_DIR" value="Tests/Controller/App" />
+    </php>
     <testsuites>
         <testsuite name="FrameworkExampleBundle test suite">
             <directory suffix="Test.php">./Tests</directory>

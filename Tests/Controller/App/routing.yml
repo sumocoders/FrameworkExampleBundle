@@ -1,0 +1,3 @@
+sumo_coders_framework_example:
+    resource: "@SumoCodersFrameworkExampleBundle/Controller/"
+    type:     annotation
