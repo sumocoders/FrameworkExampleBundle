@@ -1,9 +1,6 @@
 # SumoCoders FrameworkExampleBundle
 
-[![Build Status](https://travis-ci.org/sumocoders/FrameworkExampleBundle.svg?branch=master)](https://travis-ci.org/sumocoders/FrameworkExampleBundle) 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/?branch=master) 
-[![Code Coverage](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4ee248b5-ce69-48e8-82c7-17c78e6378e2/mini.png)](https://insight.sensiolabs.com/projects/4ee248b5-ce69-48e8-82c7-17c78e6378e2)
+[![Build Status](https://travis-ci.org/sumocoders/FrameworkExampleBundle.svg?branch=master)](https://travis-ci.org/sumocoders/FrameworkExampleBundle) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sumocoders/FrameworkExampleBundle/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4ee248b5-ce69-48e8-82c7-17c78e6378e2/mini.png)](https://insight.sensiolabs.com/projects/4ee248b5-ce69-48e8-82c7-17c78e6378e2)
 
 The FrameworkExampleBundle will add some examples.
 
