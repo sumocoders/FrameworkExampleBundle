@@ -34,6 +34,8 @@ public function registerBundles()
 }
 ```
 
+Don't forget to import the config and routing into your configuration and routing-files.
+
 ## Usage
 
 There are several example you can use to build your application, but the most 
