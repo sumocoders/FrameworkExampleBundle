@@ -6,10 +6,37 @@ use Symfony\Bundle\FrameworkBundle\Client;
 
 class DefaultControllerTest extends WebTestCase
 {
-    public function testIndex()
+    /**
+     * @var Client
+     */
+    private $client = null;
+
+    public function setUp()
     {
-        $client = static::createClient();
-        $crawler = $client->request('GET', '/hello/world');
+        $this->client = static::createClient();
+    }
+
+    public function tearDown()
+    {
+        $this->client = null;
+    }
+
+    /**
+     * @param string $method
+     * @param string $url
+     * @return Crawler
+     */
+    private function getCrawlerForRequest($method, $url)
+    {
+        return $this->client->request(
+            $method,
+            $url
+        );
+    }
+
+    public function testHelloWorld()
+    {
+        $crawler = $this->getCrawlerForRequest('GET', '/hello/world');
 
         $this->assertGreaterThan(
             0,

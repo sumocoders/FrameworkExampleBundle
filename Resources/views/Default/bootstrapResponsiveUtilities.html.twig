@@ -1,0 +1,150 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Responsive utilities</h2>
+{% endblock %}
+
+{% block main %}
+<div class="">
+  <h3>Available classes</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered ">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            Extra small devices
+            <small>Phones (&lt;768px)</small>
+          </th>
+          <th>
+            Small devices
+            <small>Tablets (≥768px)</small>
+          </th>
+          <th>
+            Medium devices
+            <small>Desktops (≥992px)</small>
+          </th>
+          <th>
+            Large devices
+            <small>Desktops (≥1200px)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-xs-*</code></th>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-sm-*</code></th>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-md-*</code></th>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-lg-*</code></th>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.hidden-xs</code></th>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-sm</code></th>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-md</code></th>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-lg</code></th>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Group of classes</th>
+          <th>CSS <code>display</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-*-block</code></th>
+          <td><code>display: block;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline</code></th>
+          <td><code>display: inline;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline-block</code></th>
+          <td><code>display: inline-block;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Print classes</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered ">
+      <thead>
+        <tr>
+          <th>Classes</th>
+          <th>Browser</th>
+          <th>Print</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <code>.visible-print-block</code><br>
+            <code>.visible-print-inline</code><br>
+            <code>.visible-print-inline-block</code>
+          </th>
+          <td class="active">Hidden</td>
+          <td class="success">Visible</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-print</code></th>
+          <td class="success">Visible</td>
+          <td class="active">Hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

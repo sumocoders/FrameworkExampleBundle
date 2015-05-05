@@ -1,5 +1,5 @@
 services:
-  framework_example.listener.menu_listener:
+  example_menu_listener:
     class: SumoCoders\FrameworkExampleBundle\EventListener\MenuListener
     arguments:
       - @security.authorization_checker

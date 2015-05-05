@@ -1,0 +1,83 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Font Awesome</h2>
+{% endblock %}
+
+{% block main %}
+<div class="font-awesome">
+  <div class="block-link">
+    <p> Meer info en voorbeelden op <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></p>
+  </div>
+  <div class="example example1">
+    <h3>Basic Icons</h3>
+    <i class="fa fa-camera-retro"></i> fa-camera-retro
+  </div>
+  <div class="example example2">
+    <h3>Larger Icons</h3>
+    <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+    <i class="fa fa-camera-retro fa-2x"></i> fa-2x
+    <i class="fa fa-camera-retro fa-3x"></i> fa-3x
+    <i class="fa fa-camera-retro fa-4x"></i> fa-4x
+    <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+  </div>
+  <div class="example example3">
+    <h3>Fixed width icons</h3>
+    <div class="list-group">
+      <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+      <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+      <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+      <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+    </div>
+  </div>
+  <div class="example example4">
+    <h3>List icons</h3>
+    <ul class="fa-ul">
+      <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+      <li><i class="fa-li fa fa-square"></i>in lists</li>
+    </ul>
+  </div>
+  <div class="example example5">
+    <h3>Animated icons</h3>
+    <i class="fa fa-spinner fa-spin"></i>
+    <i class="fa fa-circle-o-notch fa-spin"></i>
+    <i class="fa fa-refresh fa-spin"></i>
+    <i class="fa fa-cog fa-spin"></i>
+    <i class="fa fa-spinner fa-pulse"></i>
+  </div>
+  <div class="example example6">
+    <h3>Rotated & flipped</h3>
+    <i class="fa fa-shield"></i> normal<br>
+    <i class="fa fa-shield fa-rotate-90"></i> fa-rotate-90<br>
+    <i class="fa fa-shield fa-rotate-180"></i> fa-rotate-180<br>
+    <i class="fa fa-shield fa-rotate-270"></i> fa-rotate-270<br>
+    <i class="fa fa-shield fa-flip-horizontal"></i> fa-flip-horizontal<br>
+    <i class="fa fa-shield fa-flip-vertical"></i> icon-flip-vertical
+  </div>
+  <div class="example example7">
+    <h3>Stacked icons</h3>
+    <span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+    fa-twitter on fa-square-o<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+</span>
+    fa-flag on fa-circle<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+    fa-terminal on fa-square<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-camera fa-stack-1x"></i>
+  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+</span>
+    fa-ban on fa-camera
+  </div>
+</div>
+{% endblock %}

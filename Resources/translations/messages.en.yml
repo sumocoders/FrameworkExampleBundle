@@ -1,0 +1,12 @@
+example:
+  header:
+    title:
+      datepicker: datepickers
+      hello: hello %name%
+
+  menu:
+    bootstrap: bootstrap
+    datepicker: datepickers
+    examples: examples
+    hello: hello
+    tutorials: tutorials
