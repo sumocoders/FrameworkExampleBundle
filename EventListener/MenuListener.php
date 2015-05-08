@@ -35,6 +35,26 @@ class MenuListener extends DefaultMenuListener
             );
 
             $menu->addChild($menuItem);
+
+            $menuItem = $event->getFactory()->createItem(
+                'menu.example.tutorials',
+                array(
+                    'uri' => '#',
+                    'label' => 'menu.example.tutorials',
+                )
+            );
+            $menuItem->setChildrenAttribute('class', 'subNavigation');
+            $menuItem->setLinkAttribute('class', 'toggleSubNavigation');
+
+            $menuItem->addChild(
+                'menu.example.datepicker',
+                array(
+                    'route' => 'sumocoders_frameworkexample_tutorial_datepicker',
+                )
+            );
+
+            $menu->addChild($menuItem);
+
         }
     }
 }
