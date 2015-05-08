@@ -44,7 +44,7 @@ class TutorialController extends Controller
                 'date_example1',
                 'date',
                 array(
-                    'widget' => 'choice'
+                    'widget' => 'choice',
                 )
             )
             ->add(
@@ -197,25 +197,12 @@ class TutorialController extends Controller
                     'required' => false,
                 )
             )
-            ->add(
-                'save',
-                'submit',
-                array(
-                    'label' => 'Ok'
-                )
-            )
             ->getForm();
 
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
-            dump($_POST);
-            dump($form->getData());
-            exit;
-        }
-
         return array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
         );
     }
 }

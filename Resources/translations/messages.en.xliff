@@ -10,6 +10,10 @@
         <source>example.menu.example</source>
         <target>example</target>
       </trans-unit>
+        <trans-unit id="2aee77edaed4fea89bcc23d03cc13909507e7fe5" resname="menu.example.tutorials">
+            <source>menu.example.tutorials</source>
+            <target>tutorials</target>
+        </trans-unit>
       <trans-unit id="2aee77edaed4fea89bcc23d03cc13909507e7fe4" resname="menu.example.hello">
         <source>example.menu.hello</source>
         <target>hello</target>
