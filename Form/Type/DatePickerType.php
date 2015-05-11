@@ -12,18 +12,24 @@ class DatePickerType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $currentDate = new \DateTime();
+        $dateInThePast = new \DateTime('20 june 1985 13:37:00');
+
         $builder
             ->add(
                 'date_example1',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'choice',
+                    'required' => false,
                 )
             )
             ->add(
                 'date_example2',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'text',
                     'required' => false,
                 )
@@ -32,6 +38,7 @@ class DatePickerType extends AbstractType
                 'date_example3',
                 'date',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'required' => false,
                 )
@@ -40,6 +47,7 @@ class DatePickerType extends AbstractType
                 'date_example4',
                 'date',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
@@ -49,6 +57,7 @@ class DatePickerType extends AbstractType
                 'date_example5',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'date_type' => 'normal',
@@ -59,6 +68,7 @@ class DatePickerType extends AbstractType
                 'date_example6',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'date_type' => 'start',
@@ -70,6 +80,7 @@ class DatePickerType extends AbstractType
                 'date_example7',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'date_type' => 'until',
@@ -81,6 +92,7 @@ class DatePickerType extends AbstractType
                 'date_example8',
                 'date',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'date_type' => 'range',
@@ -93,6 +105,7 @@ class DatePickerType extends AbstractType
                 'datetime_example1',
                 'datetime',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
                 )
@@ -101,6 +114,7 @@ class DatePickerType extends AbstractType
                 'datetime_example2',
                 'datetime',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'text',
                     'required' => false,
                 )
@@ -109,6 +123,7 @@ class DatePickerType extends AbstractType
                 'datetime_example3',
                 'datetime',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
                 )
@@ -117,6 +132,7 @@ class DatePickerType extends AbstractType
                 'time_example1',
                 'time',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
                 )
@@ -125,6 +141,7 @@ class DatePickerType extends AbstractType
                 'time_example2',
                 'time',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'text',
                     'required' => false,
                 )
@@ -133,6 +150,7 @@ class DatePickerType extends AbstractType
                 'time_example3',
                 'time',
                 array(
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
                 )
@@ -141,6 +159,7 @@ class DatePickerType extends AbstractType
                 'birthday_example1',
                 'birthday',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'choice',
                     'required' => false,
                 )
@@ -149,6 +168,7 @@ class DatePickerType extends AbstractType
                 'birthday_example2',
                 'birthday',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'text',
                     'required' => false,
                 )
@@ -157,6 +177,7 @@ class DatePickerType extends AbstractType
                 'birthday_example3',
                 'birthday',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'required' => false,
                 )
@@ -165,6 +186,7 @@ class DatePickerType extends AbstractType
                 'birthday_example4',
                 'birthday',
                 array(
+                    'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
