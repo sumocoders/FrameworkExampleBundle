@@ -13,10 +13,9 @@ class TutorialController extends Controller
     /**
      * @Route("/tutorial/datepicker")
      * @Template()
-     * @param Request $request
      * @return array
      */
-    public function datePickerAction(Request $request)
+    public function datePickerAction()
     {
         $form = $this->createForm(new DatePickerType());
 
