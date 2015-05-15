@@ -15,17 +15,17 @@ class MenuListener extends DefaultMenuListener
 
         if ($this->getSecurityAuthorizationChecker()->isGranted('ROLE_USER')) {
             $menuItem = $event->getFactory()->createItem(
-                'menu.example.overview',
+                'example.menu.examples',
                 array(
                     'uri' => '#',
-                    'label' => 'menu.example.overview',
+                    'label' => 'example.menu.examples',
                 )
             );
             $menuItem->setChildrenAttribute('class', 'subNavigation');
             $menuItem->setLinkAttribute('class', 'toggleSubNavigation');
 
             $menuItem->addChild(
-                'menu.example.hello',
+                'example.menu.hello',
                 array(
                     'route' => 'sumocoders_frameworkexample_default_hello',
                     'routeParameters' => array(
@@ -37,24 +37,23 @@ class MenuListener extends DefaultMenuListener
             $menu->addChild($menuItem);
 
             $menuItem = $event->getFactory()->createItem(
-                'menu.example.tutorials',
+                'example.menu.tutorials',
                 array(
                     'uri' => '#',
-                    'label' => 'menu.example.tutorials',
+                    'label' => 'example.menu.tutorials',
                 )
             );
             $menuItem->setChildrenAttribute('class', 'subNavigation');
             $menuItem->setLinkAttribute('class', 'toggleSubNavigation');
 
             $menuItem->addChild(
-                'menu.example.datepicker',
+                'example.menu.datepicker',
                 array(
                     'route' => 'sumocoders_frameworkexample_tutorial_datepicker',
                 )
             );
 
             $menu->addChild($menuItem);
-
         }
     }
 }
