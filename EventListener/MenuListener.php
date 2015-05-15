@@ -13,7 +13,7 @@ class MenuListener extends DefaultMenuListener
         $user = $this->getSecurityTokenStorage()->getToken()->getUser();
         $menu = $event->getMenu();
 
-        if ($user) {
+        if ($this->getSecurityAuthorizationChecker()->isGranted('ROLE_USER')) {
             $menuItem = $event->getFactory()->createItem(
                 'menu.example.overview',
                 array(
@@ -35,6 +35,26 @@ class MenuListener extends DefaultMenuListener
             );
 
             $menu->addChild($menuItem);
+
+            $menuItem = $event->getFactory()->createItem(
+                'menu.example.tutorials',
+                array(
+                    'uri' => '#',
+                    'label' => 'menu.example.tutorials',
+                )
+            );
+            $menuItem->setChildrenAttribute('class', 'subNavigation');
+            $menuItem->setLinkAttribute('class', 'toggleSubNavigation');
+
+            $menuItem->addChild(
+                'menu.example.datepicker',
+                array(
+                    'route' => 'sumocoders_frameworkexample_tutorial_datepicker',
+                )
+            );
+
+            $menu->addChild($menuItem);
+
         }
     }
 }
