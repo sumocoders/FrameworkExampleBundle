@@ -2,9 +2,20 @@ example:
   header:
     title:
       datepicker: datepickers
+      hello: hello %name%
+      labels: labels
 
   menu:
     datepicker: datepickers
     examples: examples
     hello: hello
     tutorials: tutorials
+
+labels:
+  label:
+    example.with.help.block: with help block
+    example.with.help.label: with help label
+    example.with.tooltip: with tooltip
+    example.with.tooltip.without.icon: with tooltip but no icon
+    example.with.popover: with popover
+    example.with.popover.and.options: with popover and options

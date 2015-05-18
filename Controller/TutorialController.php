@@ -3,10 +3,10 @@
 namespace SumoCoders\FrameworkExampleBundle\Controller;
 
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
+use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Component\HttpFoundation\Request;
 
 class TutorialController extends Controller
 {
@@ -18,6 +18,19 @@ class TutorialController extends Controller
     public function datePickerAction()
     {
         $form = $this->createForm(new DatePickerType());
+
+        return array(
+            'form' => $form->createView(),
+        );
+    }
+
+    /**
+     * @Route("/tutorial/labels")
+     * @Template()
+     */
+    public function labelsAction()
+    {
+        $form = $this->createForm(new LabelsType);
 
         return array(
             'form' => $form->createView(),

@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+    <h2>
+        {{ 'example.header.title.labels'|trans|capitalize }}
+    </h2>
+{% endblock %}
+
+{% block main %}
+    {{ form_start(form) }}
+    <h1>Labels</h1>
+
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+{% endblock %}
