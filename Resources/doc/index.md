@@ -34,7 +34,7 @@ public function registerBundles()
 }
 ```
 
-Don't forget to import the config and routing into your configuration and routing-files.
+Don't forget to import the routing into your routing-files.
 
 ## Usage
 
