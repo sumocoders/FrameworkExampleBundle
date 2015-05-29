@@ -41,11 +41,11 @@
       <div class="panel-body">
         <form class="form-inline">
           <div class="form-group">
-            <label for="exampleInputName2">Name</label>
+            <label class="control-label" for="exampleInputName2">Name</label>
             <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail2">Email</label>
+            <label class="control-label" for="exampleInputEmail2">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
           </div>
           <button type="submit" class="btn btn-default">Send invitation</button>
@@ -272,17 +272,6 @@
             </div>
           </div>
         </form>
-        <form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only">Email</label>
-            <p class="form-control-static">email@example.com</p>
-          </div>
-          <div class="form-group">
-            <label for="inputPassword2" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Confirm identity</button>
-        </form>
       </div>
     </div>
   </div>
@@ -376,13 +365,13 @@
     <div class="form-group has-warning has-feedback">
       <label class="control-label" for="inputWarning2">Input with warning</label>
       <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-      <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+      <span class="fa fa fa-exclamation-triangle form-control-feedback" aria-hidden="true"></span>
       <span id="inputWarning2Status" class="sr-only">(warning)</span>
     </div>
     <div class="form-group has-error has-feedback">
       <label class="control-label" for="inputError2">Input with error</label>
       <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-      <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+      <span class="fa fa-times form-control-feedback" aria-hidden="true"></span>
       <span id="inputError2Status" class="sr-only">(error)</span>
     </div>
     <div class="form-group has-success has-feedback">
@@ -481,5 +470,4 @@
     </div>
   </div>
 </div>
-
 {% endblock %}

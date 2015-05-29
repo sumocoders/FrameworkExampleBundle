@@ -36,4 +36,13 @@ class TutorialController extends Controller
             'form' => $form->createView(),
         );
     }
+
+    /**
+     * @Route("/tutorial/statistics")
+     * @Template()
+     */
+    public function statisticsAction()
+    {
+       return array();
+    }
 }

@@ -126,15 +126,6 @@ class BootstrapController extends Controller
     }
 
     /**
-     * @Route("/bootstrap/nav-bar")
-     * @Template()
-     */
-    public function navBarAction()
-    {
-        return array();
-    }
-
-    /**
      * @Route("/bootstrap/breadcrumbs")
      * @Template()
      */

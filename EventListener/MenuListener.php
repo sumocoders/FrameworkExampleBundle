@@ -14,7 +14,6 @@ class MenuListener extends DefaultMenuListener
         $menu = $event->getMenu();
 
         if ($this->getSecurityAuthorizationChecker()->isGranted('ROLE_USER')) {
-
             $bootstrapChilds = array(
                 'Grid' => 'sumocoders_frameworkexample_bootstrap_grid',
                 'Font Awesome' => 'sumocoders_frameworkexample_bootstrap_fontawesome',
@@ -29,7 +28,6 @@ class MenuListener extends DefaultMenuListener
                 'Dropdowns' => 'sumocoders_frameworkexample_bootstrap_dropdowns',
                 'Input groups' => 'sumocoders_frameworkexample_bootstrap_inputgroups',
                 'Navs' => 'sumocoders_frameworkexample_bootstrap_navs',
-                'Navbar' => 'sumocoders_frameworkexample_bootstrap_navbar',
                 'Breadcrumbs' => 'sumocoders_frameworkexample_bootstrap_breadcrumbs',
                 'Pagination' => 'sumocoders_frameworkexample_bootstrap_pagination',
                 'Labels' => 'sumocoders_frameworkexample_bootstrap_labels',
@@ -79,6 +77,7 @@ class MenuListener extends DefaultMenuListener
                 ),
                 'example.menu.datepicker' => 'sumocoders_frameworkexample_tutorial_datepicker',
                 'example.menu.labels' => 'sumocoders_frameworkexample_tutorial_labels',
+                'example.menu.statistics' => 'sumocoders_frameworkexample_tutorial_statistics',
             );
 
             $tutorialMenuItem = $this->createItemWithChilds(

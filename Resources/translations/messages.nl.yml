@@ -11,6 +11,7 @@ example:
     hello: hallo
     labels: labels
     tutorials: howto's
+    statistics: statistics
 
 labels:
   label:
