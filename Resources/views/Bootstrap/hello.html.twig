@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+    <h2>
+        {{ 'example.header.title.hello'|trans({'%name%': name})|capitalize }}
+    </h2>
+{% endblock %}
+
+{% block main %}
+    Hello {{ name }}!
+{% endblock %}

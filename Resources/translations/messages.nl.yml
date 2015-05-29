@@ -9,4 +9,14 @@ example:
     datepicker: datepickers
     examples: voorbeelden
     hello: hallo
+    labels: labels
     tutorials: howto's
+
+labels:
+  label:
+    example.with.help.block: met help block
+    example.with.help.label: met help label
+    example.with.tooltip: met tooltip
+    example.with.tooltip.without.icon: met tooltip zonder icon
+    example.with.popover: met popover
+    example.with.popover.and.options: met popover en options
