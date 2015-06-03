@@ -78,6 +78,7 @@ class MenuListener extends DefaultMenuListener
                 'example.menu.datepicker' => 'sumocoders_frameworkexample_tutorial_datepicker',
                 'example.menu.labels' => 'sumocoders_frameworkexample_tutorial_labels',
                 'example.menu.statistics' => 'sumocoders_frameworkexample_tutorial_statistics',
+                'example.menu.customBreadCrumb' => 'sumocoders_frameworkexample_tutorial_custombreadcrumb',
             );
 
             $tutorialMenuItem = $this->createItemWithChilds(

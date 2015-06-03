@@ -1,11 +1,13 @@
 example:
   header:
     title:
+      customBreadCrumb: custom bread crumb
       datepicker: date pickers
       hello: hallo %name%
 
   menu:
     bootstrap: bootstrap
+    customBreadCrumb: custom bread crumb
     datepicker: datepickers
     examples: voorbeelden
     hello: hallo
