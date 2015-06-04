@@ -273,7 +273,7 @@ class BootstrapController extends Controller
      * @Route("/bootstrap/popover")
      * @Template()
      */
-    public function popoverAction()
+    public function popOverAction()
     {
         return array();
     }
