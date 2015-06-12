@@ -8,15 +8,12 @@ Add FrameworkExampleBundle as a requirement in your composer.json:
 ```
 {
     "require": {
-        "sumocoders/framework-example-bundle": "dev-master"
+        "sumocoders/framework-example-bundle": "~1.0"
     }
 }
 ```
 
-**Warning**
-> Replace `dev-master` with a sane thing
-
-Run `composer update`:
+Run `composer update sumocoders/framework-example-bundle`:
 
 Enable the bundle in the kernel.
 
