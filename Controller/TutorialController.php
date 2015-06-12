@@ -3,6 +3,7 @@
 namespace SumoCoders\FrameworkExampleBundle\Controller;
 
 use Knp\Menu\MenuItem;
+use SumoCoders\FrameworkExampleBundle\Form\Type\CollectionsType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -73,5 +74,19 @@ class TutorialController extends Controller
         );
 
         return array();
+    }
+
+    /**
+     * @Route("/tutorial/collections")
+     * @Template()
+     * @return array
+     */
+    public function collectionsAction()
+    {
+        $form = $this->createForm(new CollectionsType());
+
+        return array(
+            'form' => $form->createView(),
+        );
     }
 }

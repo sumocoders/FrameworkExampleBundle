@@ -79,6 +79,7 @@ class MenuListener extends DefaultMenuListener
                 'example.menu.labels' => 'sumocoders_frameworkexample_tutorial_labels',
                 'example.menu.statistics' => 'sumocoders_frameworkexample_tutorial_statistics',
                 'example.menu.customBreadCrumb' => 'sumocoders_frameworkexample_tutorial_custombreadcrumb',
+                'example.menu.collections' => 'sumocoders_frameworkexample_tutorial_collections',
             );
 
             $tutorialMenuItem = $this->createItemWithChilds(
