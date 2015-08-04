@@ -16,6 +16,12 @@ example:
     tutorials: tutorials
     statistics: statistics
 
+datepicker:
+  birthday.example: birthday
+  date.example: date
+  datetime.example: datetime
+  time.example: time
+
 labels:
   label:
     example.with.help.block: with help block

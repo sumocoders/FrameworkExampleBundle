@@ -15,6 +15,12 @@ example:
     tutorials: howto's
     statistics: statistics
 
+datepicker:
+  birthday.example: geboortedatg
+  date.example: datum
+  datetime.example: datum en tijd
+  time.example: tijd
+
 labels:
   label:
     example.with.help.block: met help block
