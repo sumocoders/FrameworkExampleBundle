@@ -59,7 +59,7 @@ class TutorialController extends Controller
         $breadCrumbBuilder = $this->get('framework.breadcrumb_builder');
         $factory = $this->get('knp_menu.factory');
 
-        $breadCrumbBuilder->setDontExtractFromTheRequest();
+        $breadCrumbBuilder->dontExtractFromTheRequest();
         $item = (new MenuItem('foo.bar', $factory))
             ->setlabel('First!')
             ->setUri(
