@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Responsive Embed</h2>
+{% endblock %}
+
+{% block main %}
+<div class="responsive-embed-block">
+  <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPvuNsRccVw" allowfullscreen=""></iframe>
+  </div>
+  <br>
+  <!-- 4:3 aspect ratio -->
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nPvuNsRccVw" allowfullscreen=""></iframe>
+  </div>
+</div>
+{% endblock %}

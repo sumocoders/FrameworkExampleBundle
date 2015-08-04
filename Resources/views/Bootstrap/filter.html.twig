@@ -1,0 +1,214 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Filter</h2>
+{% endblock %}
+
+{% block main %}
+<div class="filter-block">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>Filter</h3>
+    </div>
+    <div class="panel-body">
+      <h4>Mattis</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="search" class="control-label">Bibendum</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="slider">Parturient</label>
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+      <h4>Dolor</h4>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox">
+              Consecteur
+            </label>
+          </div>
+        </div>
+      </div>
+      <h4>Egestas</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="select">Tristique</label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="select" class="control-label">Ullamcorper</label>
+          <select class="select2">
+            <optgroup label="Alaskan/Hawaiian Time Zone">
+              <option value="AK">Alaska</option>
+              <option value="HI">Hawaii</option>
+            </optgroup>
+            <optgroup label="Pacific Time Zone">
+              <option value="CA">California</option>
+              <option value="NV">Nevada</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+            </optgroup>
+            <optgroup label="Mountain Time Zone">
+              <option value="AZ">Arizona</option>
+              <option value="CO">Colorado</option>
+              <option value="ID">Idaho</option>
+              <option value="MT">Montana</option><option value="NE">Nebraska</option>
+              <option value="NM">New Mexico</option>
+              <option value="ND">North Dakota</option>
+              <option value="UT">Utah</option>
+              <option value="WY">Wyoming</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <h4>Date</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="datepicker form-control" id="dateinput">
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <div class="row">
+        <div class="col-md-offset-6 col-md-6">
+          <div class="pull-right">
+
+            <div class="parameters">
+              <input type="checkbox">
+              <label for="checkbox">Remember parameters</label>
+            </div>
+            <button class="btn btn-info pull-right">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>Filter</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="ui-widget input-group">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-search"a></i></span>
+            <input type="text" class="tags form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p><a class="pull-right" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More options</a><p></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="collapse" id="collapseExample">
+            <h4>Dolor</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="select">Tristique</label>
+                <select class="select2">
+                  <optgroup label="Alaskan/Hawaiian Time Zone">
+                    <option value="AK">Alaska</option>
+                    <option value="HI">Hawaii</option>
+                  </optgroup>
+                  <optgroup label="Pacific Time Zone">
+                    <option value="CA">California</option>
+                    <option value="NV">Nevada</option>
+                    <option value="OR">Oregon</option>
+                    <option value="WA">Washington</option>
+                  </optgroup>
+                  <optgroup label="Mountain Time Zone">
+                    <option value="AZ">Arizona</option>
+                    <option value="CO">Colorado</option>
+                    <option value="ID">Idaho</option>
+                    <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="select">Tristique</label>
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <h4>Sem</h4>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="slider">Parturient</label>
+                <div class="slider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <button class="btn btn-info pull-right">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

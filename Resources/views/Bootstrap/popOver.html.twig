@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Popover</h2>
+{% endblock %}
+
+{% block main %}
+<div class="block-link">
+  <p> Meer info en voorbeelden op <a href="http://getbootstrap.com/javascript/#popovers">http://getbootstrap.com/javascript/#popovers</a></p>
+</div>
+<div class="popover-block">
+  <h3>Examples</h3>
+  <button type="button" class="btn btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+  <h4>Four directions</h4>
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on left
+  </button>
+
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+  </button>
+
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on bottom
+  </button>
+
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on right
+  </button>
+</div>
+{% endblock %}

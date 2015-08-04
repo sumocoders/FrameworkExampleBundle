@@ -1,0 +1,46 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+  <h2>Statistics</h2>
+{% endblock %}
+
+{% block main %}
+  <p> Meer info en voorbeelden op <a href="http://www.chartjs.org/docs/">http://www.chartjs.org/docs/</a></p>
+  <h3>Line chart</h3>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <canvas class="chart" id="line-chart"></canvas>
+    </div>
+  </div>
+
+  <h3>Bar chart</h3>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <canvas class="chart" id="bar-chart"></canvas>
+    </div>
+  </div>
+
+  <h3>Radar chart</h3>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <canvas class="chart" id="radar-chart"></canvas>
+    </div>
+  </div>
+
+  <h3>Polar area chart</h3>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+     <canvas class="chart" id="polar-area-chart"></canvas>
+   </div>
+ </div>
+
+ <h3>Pie & Doughnut charts</h3>
+ <div class="row">
+  <div class="col-md-6">
+    <canvas class="chart" id="pie-chart"></canvas>        
+  </div>
+  <div class="col-md-6">
+    <canvas class="chart" id="doughnut-chart"></canvas>
+  </div>
+</div>
+{% endblock %}

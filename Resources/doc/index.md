@@ -3,17 +3,7 @@
 
 ## Installation
 
-Add FrameworkExampleBundle as a requirement in your composer.json:
-
-```
-{
-    "require": {
-        "sumocoders/framework-example-bundle": "~1.0"
-    }
-}
-```
-
-Run `composer update sumocoders/framework-example-bundle`:
+    composer require sumocoders/framework-example-bundle
 
 Enable the bundle in the kernel.
 

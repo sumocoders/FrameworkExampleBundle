@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Tags input</h2>
+{% endblock %}
+
+{% block main %}
+<div class="tagsinput-block">
+  <label for="tags" class="control-label"></label>
+  <input type="text" value="Amsterdam, Sydney, Beijing" class="form-control" data-role="tagsinput">
+</div>
+{% endblock %}

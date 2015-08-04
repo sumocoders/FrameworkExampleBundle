@@ -1,0 +1,102 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Modal</h2>
+{% endblock %}
+
+{% block main %}
+<div class="block-link">
+  <p> Meer info en voorbeelden op <a href="http://getbootstrap.com/javascript/#modals">http://getbootstrap.com/javascript/#modals</a></p>
+</div>
+<div class="modals-block">
+  <h3>Examples</h3>
+  <h4>Static example</h4>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem
+            malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta
+            sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Optional sizes</h3>
+  <!-- Large modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem
+            malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta
+            sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel3">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem
+            malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta
+            sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Remove animation</h3>
+  <p>For modals that simply appear rather than <mark>.fade</mark> in to view, remove the .fade class from your modal markup.</p>
+</div>
+{% endblock %}

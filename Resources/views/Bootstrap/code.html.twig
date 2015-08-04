@@ -1,0 +1,55 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Code</h2>
+{% endblock %}
+
+{% block main %}
+<div class="code-block">
+  <h3>Inline</h3>
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+  <h3>User Input</h3>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+      To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+    </div>
+    <div class="panel-footer">
+      To switch directories, type <code class="language-html" data-lang="html"> <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> </code> followed by the name of the directory.<code class="language-html" data-lang="html"><span class="nt">&lt;br&gt;</span> </code> To edit settings, press <code class="language-html" data-lang="html"> <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span></code>
+    </div>
+  </div>
+
+  <h3>Basic block</h3>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+    </div>
+    <div class="panel-footer">
+      <code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span> </code> Sample text here... <code class="language-html" data-lang="html"><<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code>
+    </div>
+  </div>
+
+  <h3>Variables</h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+    </div>
+    <div class="panel-footer">
+      <code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code>
+    </div>
+  </div>
+  
+  <h3>Sample output</h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <samp>This text is meant to be treated as sample output from a computer program.</samp>
+    </div>
+    <div class="panel-footer">
+      <code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span></code>This text is meant to be treated as sample output from a computer program.<code class="language-html" data-lang="html"><span class="nt">&lt;/samp&gt;</span></code>
+    </div>
+  </div>
+</div>
+{% endblock %}

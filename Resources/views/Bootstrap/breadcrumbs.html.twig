@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Breadcrumbs</h2>
+{% endblock %}
+
+{% block main %}
+<div class="breadcrumbs">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+  </ol>
+
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+  </ol>
+</div>
+{% endblock %}

@@ -1,15 +1,20 @@
 example:
   header:
     title:
+      customBreadCrumb: custom bread crumb
       datepicker: datepickers
       hello: hello %name%
-      labels: labels
 
   menu:
+    bootstrap: bootstrap
+    collections: collections
+    customBreadCrumb: custom bread crumb
     datepicker: datepickers
     examples: examples
     hello: hello
+    labels: labels
     tutorials: tutorials
+    statistics: statistics
 
 labels:
   label:
@@ -19,3 +24,10 @@ labels:
     example.with.tooltip.without.icon: with tooltip but no icon
     example.with.popover: with popover
     example.with.popover.and.options: with popover and options
+
+collections:
+  languages: languages
+  languages.without.label: without a label
+
+name:
+  label: language

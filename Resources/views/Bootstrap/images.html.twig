@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Images</h2>
+{% endblock %}
+
+{% block main %}
+<div class="images">
+  <h3>Responsive images</h3>
+  <img src="http://placehold.it/600" class="img-responsive" alt="Responsive image">
+  <h3>Image shapes</h3>
+  <img src="http://placehold.it/250" alt="rounded" class="img-rounded">
+  <img src="http://placehold.it/250" alt="circle" class="img-circle">
+  <img src="http://placehold.it/250" alt="thumbnail" class="img-thumbnail">
+</div>
+{% endblock %}

@@ -1,15 +1,19 @@
 example:
   header:
     title:
+      customBreadCrumb: custom bread crumb
       datepicker: date pickers
       hello: hallo %name%
-      labels: labels
 
   menu:
+    bootstrap: bootstrap
+    customBreadCrumb: custom bread crumb
     datepicker: datepickers
     examples: voorbeelden
     hello: hallo
+    labels: labels
     tutorials: howto's
+    statistics: statistics
 
 labels:
   label:

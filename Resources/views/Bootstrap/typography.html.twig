@@ -1,0 +1,79 @@
+{% extends '::base.html.twig' %}
+
+{% block header_title %}
+<h2>Typography</h2>
+{% endblock %}
+
+{% block main %}
+<div class="typography">
+
+  <h3>Headings</h3>
+  <h1>h1. Bootstrap heading</h1>
+  <h2>h2. Bootstrap heading</h2>
+  <h3>h3. Bootstrap heading</h3>
+  <h4>h4. Bootstrap heading</h4>
+  <h5>h5. Bootstrap heading</h5>
+  <h6>h6. Bootstrap heading</h6>
+
+  <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+  <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+  <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+  <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+  <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+  <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+
+  <h3>Body copy</h3>
+  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+    ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
+
+  <p>Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl
+    consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+  <p>Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean
+    lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <h4>Lead body copy</h4>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <h3>Inline text elements</h3>
+  <h4>Marked text</h4>
+  You can use the mark tag to <mark>highlight</mark> text.
+  <h4>Deleted text</h4>
+  <del>This line of text is meant to be treated as deleted text.</del>
+  <h4>Striketrough text</h4>
+  <s>This line of text is meant to be treated as no longer accurate.</s>
+  <h4>Inserted text</h4>
+  <ins>This line of text is meant to be treated as an addition to the document.</ins>
+  <h4>Underlined text</h4>
+  <u>This line of text will render as underlined</u>
+  <h4>Small text</h4>
+  <small>This line of text is meant to be treated as fine print.</small>
+  <h4>Bold</h4>
+  <strong>rendered as bold text</strong>
+  <h4>Italics</h4>
+  <em>rendered as italicized text</em>
+
+  <h3>Alignment classes</h3>
+  <p class="text-left">Left aligned text.</p>
+  <p class="text-center">Center aligned text.</p>
+  <p class="text-right">Right aligned text.</p>
+  <p class="text-justify">Justified text.</p>
+  <p class="text-nowrap">No wrap text.</p>
+
+  <h3>Blockquotes</h3>
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  </blockquote>
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote>
+  <blockquote class="blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote>
+</div>
+{% endblock %}
