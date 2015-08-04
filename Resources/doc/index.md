@@ -3,10 +3,7 @@
 
 ## Installation
 
-    composer require sumocoders/framework-example-bundle:dev-master
-
-**Warning**
-> Replace `dev-master` with a sane thing
+    composer require sumocoders/framework-example-bundle
 
 Enable the bundle in the kernel.
 
