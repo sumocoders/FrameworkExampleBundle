@@ -315,15 +315,6 @@ class BootstrapController extends Controller
     }
 
     /**
-     * @Route("/bootstrap/datepicker")
-     * @Template()
-     */
-    public function datepickerAction()
-    {
-        return array();
-    }
-
-    /**
      * @Route("/bootstrap/slider")
      * @Template()
      */

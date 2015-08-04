@@ -49,7 +49,6 @@ class MenuListener extends DefaultMenuListener
                 'Carousel' => 'sumocoders_frameworkexample_bootstrap_carousel',
                 'Sortable' => 'sumocoders_frameworkexample_bootstrap_sortable',
                 'Autocomplete' => 'sumocoders_frameworkexample_bootstrap_autocomplete',
-                'Datepicker' => 'sumocoders_frameworkexample_bootstrap_datepicker',
                 'Slider' => 'sumocoders_frameworkexample_bootstrap_slider',
                 'Select 2' => 'sumocoders_frameworkexample_bootstrap_select2',
                 'Tags input' => 'sumocoders_frameworkexample_bootstrap_tagsinput',
