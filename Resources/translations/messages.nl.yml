@@ -1,9 +1,11 @@
 example:
   header:
     title:
+      collections: collections
       customBreadCrumb: custom bread crumb
       datepicker: date pickers
       hello: hallo %name%
+      labels: labels
 
   menu:
     bootstrap: bootstrap
