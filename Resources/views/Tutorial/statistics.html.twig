@@ -37,10 +37,22 @@
  <h3>Pie & Doughnut charts</h3>
  <div class="row">
   <div class="col-md-6">
-    <canvas class="chart" id="pie-chart"></canvas>        
+    <canvas class="chart" id="pie-chart"></canvas>
   </div>
   <div class="col-md-6">
     <canvas class="chart" id="doughnut-chart"></canvas>
   </div>
 </div>
+{% endblock %}
+
+{% block head_javascripts %}
+
+  {% javascripts
+    'assets/js/frameworkexamplebundle.charts.js'
+    output='js/charts.js'
+  %}
+    <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+
+ {{ parent() }}
 {% endblock %}
