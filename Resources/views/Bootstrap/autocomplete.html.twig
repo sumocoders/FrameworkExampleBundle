@@ -8,7 +8,19 @@
 <div class="form-inline">
   <div class="ui-widget input-group">
     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-search"a></i></span>
-    <input type="text" class="tags form-control">
+    <input type="text" id="tags" class="tags form-control">
   </div>
 </div>
+{% endblock %}
+
+{% block head_javascripts %}
+
+  {% javascripts
+    'assets/js/frameworkexamplebundle.autocomplete.js'
+    output='js/autocomplete.js'
+  %}
+    <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+
+ {{ parent() }}
 {% endblock %}
