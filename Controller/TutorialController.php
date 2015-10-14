@@ -89,4 +89,14 @@ class TutorialController extends Controller
             'form' => $form->createView(),
         );
     }
+
+    /**
+     * @Route("/tutorial/import")
+     * @Template()
+     * @return array
+     */
+    public function importAction()
+    {
+        return [];
+    }
 }
