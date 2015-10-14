@@ -6,7 +6,6 @@ use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
 
 class DatePickerTypeTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @var DatePickerType
      */
