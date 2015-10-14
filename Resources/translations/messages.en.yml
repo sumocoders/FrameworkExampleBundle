@@ -6,6 +6,7 @@ example:
       datepicker: datepickers
       hello: hello %name%
       labels: labels
+      api: api
 
   menu:
     bootstrap: bootstrap
@@ -17,6 +18,7 @@ example:
     labels: labels
     tutorials: tutorials
     statistics: statistics
+    api: api
 
 datepicker:
   birthday.example: birthday
@@ -36,6 +38,14 @@ labels:
 collections:
   languages: languages
   languages.without.label: without a label
+
+api:
+  install: install the nelmioApiDocBundle
+  composer: require the nelmioApiDocBundle using composer
+  kernel: load the bundle in your AppKernel
+  routing: add the routes to the bundle in your routing.yml file
+  config: enable the configuration in your config.yml file
+  use: create api documentation using the ApiDoc annotation
 
 name:
   label: language

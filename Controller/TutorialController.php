@@ -89,4 +89,14 @@ class TutorialController extends Controller
             'form' => $form->createView(),
         );
     }
+
+    /**
+     * @Route("/tutorial/api")
+     * @Template()
+     * @return array
+     */
+    public function apiAction()
+    {
+        return [];
+    }
 }
