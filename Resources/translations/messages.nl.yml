@@ -6,6 +6,7 @@ example:
       datepicker: date pickers
       hello: hallo %name%
       labels: labels
+      api: api
 
   menu:
     bootstrap: bootstrap
@@ -16,6 +17,7 @@ example:
     labels: labels
     tutorials: howto's
     statistics: statistics
+    api: api
 
 datepicker:
   birthday.example: geboortedatg
@@ -31,3 +33,11 @@ labels:
     example.with.tooltip.without.icon: met tooltip zonder icon
     example.with.popover: met popover
     example.with.popover.and.options: met popover en options
+
+api:
+  install: installeer de nelmioApiDocBundle
+  composer: download de bundle via composer
+  kernel: laadt de bundle in in je AppKernel
+  routing: voeg de routes toe in je routing.yml file
+  config: schakel de bundle in in je config.yml file
+  use: genereer api documentation via de ApiDoc annotation
