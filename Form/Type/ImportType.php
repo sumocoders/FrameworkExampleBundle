@@ -20,7 +20,7 @@ class ImportType extends AbstractType
                     'attr' => [ 'rows' => 15 ],
                 ]
             )
-            ->add('import', 'button');
+            ->add('import', 'submit');
     }
 
     /**

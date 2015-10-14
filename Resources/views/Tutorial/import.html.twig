@@ -1,13 +1,18 @@
 {% extends '::base.html.twig' %}
 
 {% block header_title %}
-    <h2>
-        {{ 'example.header.title.import'|trans|capitalize }}
-    </h2>
+<h2>
+  {{ 'example.header.title.import'|trans|capitalize }}
+</h2>
 {% endblock %}
 
 {% block main %}
+  <a href="https://github.com/ddeboer/data-import">https://github.com/ddeboer/data-import</a>
+  {% if processedData is not empty %}
+    {{ dump(processedData) }}
+  {% else %}
     {{ form_start(form) }}
     {{ form_widget(form) }}
     {{ form_end(form) }}
+  {% endif %}
 {% endblock %}
