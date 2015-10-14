@@ -41,3 +41,6 @@ collections:
 
 name:
   label: language
+
+import:
+  data: data

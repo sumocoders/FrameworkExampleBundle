@@ -4,6 +4,7 @@ namespace SumoCoders\FrameworkExampleBundle\Controller;
 
 use Knp\Menu\MenuItem;
 use SumoCoders\FrameworkExampleBundle\Form\Type\CollectionsType;
+use SumoCoders\FrameworkExampleBundle\Form\Type\ImportType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -95,8 +96,27 @@ class TutorialController extends Controller
      * @Template()
      * @return array
      */
-    public function importAction()
+    public function importAction(Request $request)
     {
-        return [];
+        $form = $this->createForm(new ImportType());
+
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            dump($form->getData());exit;
+        }
+
+        $defaultData = '"firstname";"lastname";"gender"';
+        $defaultData .= "\n";
+        $defaultData .= '"Wouter";"Sioen";"male"';
+        $defaultData .= "\n";
+        $defaultData .= '"Tijs";"Verkoyen";"m"';
+        $defaultData .= "\n";
+        $defaultData .= '"Katrien";"Vanhaute";"female"';
+
+        $form->setData([ 'data' => $defaultData ]);
+
+        return [
+            'form' => $form->createView(),
+        ];
     }
 }
