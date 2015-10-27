@@ -14,13 +14,7 @@
 {% endblock %}
 
 {% block head_javascripts %}
+  {{ parent() }}
 
-  {% javascripts
-    'assets/js/frameworkexamplebundle.autocomplete.js'
-    output='js/autocomplete.js'
-  %}
-    <script src="{{ asset_url }}"></script>
-  {% endjavascripts %}
-
- {{ parent() }}
+  <script type="text/javascript" src="{{ asset('/assets/js/frameworkexamplebundle.autocomplete.js') }}"></script>
 {% endblock %}

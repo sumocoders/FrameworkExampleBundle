@@ -31,27 +31,22 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
      <canvas class="chart" id="polar-area-chart"></canvas>
-   </div>
- </div>
+    </div>
+  </div>
 
- <h3>Pie & Doughnut charts</h3>
- <div class="row">
-  <div class="col-md-6">
-    <canvas class="chart" id="pie-chart"></canvas>
+  <h3>Pie & Doughnut charts</h3>
+  <div class="row">
+      <div class="col-md-6">
+          <canvas class="chart" id="pie-chart"></canvas>
+      </div>
+      <div class="col-md-6">
+          <canvas class="chart" id="doughnut-chart"></canvas>
+      </div>
   </div>
-  <div class="col-md-6">
-    <canvas class="chart" id="doughnut-chart"></canvas>
-  </div>
-</div>
 {% endblock %}
 
 {% block head_javascripts %}
   {{ parent() }}
 
-  {% javascripts
-    'assets/js/frameworkexamplebundle.charts.js'
-    output='js/charts.js'
-  %}
-    <script src="{{ asset_url }}"></script>
-  {% endjavascripts %}
+  <script type="text/javascript" src="{{ asset('/assets/js/frameworkexamplebundle.charts.js') }}"></script>
 {% endblock %}
