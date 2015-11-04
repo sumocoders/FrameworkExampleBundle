@@ -9,6 +9,7 @@ example:
 
   menu:
     bootstrap: bootstrap
+    collections: collecties
     customBreadCrumb: custom bread crumb
     datepicker: datepickers
     examples: voorbeelden
