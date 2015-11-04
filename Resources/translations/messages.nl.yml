@@ -9,6 +9,7 @@ example:
 
   menu:
     bootstrap: bootstrap
+    collections: collecties
     customBreadCrumb: custom bread crumb
     datepicker: datepickers
     examples: voorbeelden
@@ -17,7 +18,7 @@ example:
     tutorials: howto's
     statistics: statistics
 
-datepicker:
+datePicker:
   birthday.example: geboortedatg
   date.example: datum
   datetime.example: datum en tijd

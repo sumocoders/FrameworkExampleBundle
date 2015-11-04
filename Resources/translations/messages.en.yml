@@ -18,7 +18,7 @@ example:
     tutorials: tutorials
     statistics: statistics
 
-datepicker:
+datePicker:
   birthday.example: birthday
   date.example: date
   datetime.example: datetime
