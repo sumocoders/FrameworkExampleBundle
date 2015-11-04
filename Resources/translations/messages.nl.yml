@@ -17,7 +17,7 @@ example:
     tutorials: howto's
     statistics: statistics
 
-datepicker:
+datePicker:
   birthday.example: geboortedatg
   date.example: datum
   datetime.example: datum en tijd
