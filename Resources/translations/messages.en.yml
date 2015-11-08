@@ -6,6 +6,7 @@ example:
       datepicker: datepickers
       hello: hello %name%
       labels: labels
+      import: import
 
   menu:
     bootstrap: bootstrap
@@ -17,6 +18,7 @@ example:
     labels: labels
     tutorials: tutorials
     statistics: statistics
+    import: import
 
 datePicker:
   birthday.example: birthday
@@ -39,3 +41,6 @@ collections:
 
 name:
   label: language
+
+import:
+  data: data
