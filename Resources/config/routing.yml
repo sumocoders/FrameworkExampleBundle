@@ -1,3 +1,9 @@
 example:
-    resource: "@SumoCodersFrameworkExampleBundle/Controller"
-    type: annotation
+  resource: "@SumoCodersFrameworkExampleBundle/Controller"
+  type: annotation
+
+# NelmioApiDocBundle:
+#  resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+#  prefix:   /api/doc
+#  options:
+#    i18n: false
