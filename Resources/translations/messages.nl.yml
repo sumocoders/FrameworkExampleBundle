@@ -6,6 +6,7 @@ example:
       datepicker: date pickers
       hello: hallo %name%
       labels: labels
+      buttonIcons: knop iconen
 
   menu:
     bootstrap: bootstrap
@@ -15,6 +16,7 @@ example:
     examples: voorbeelden
     hello: hallo
     labels: labels
+    buttonIcons: knop iconen
     tutorials: howto's
     statistics: statistics
 
