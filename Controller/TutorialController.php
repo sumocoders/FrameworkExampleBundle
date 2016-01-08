@@ -3,6 +3,7 @@
 namespace SumoCoders\FrameworkExampleBundle\Controller;
 
 use Knp\Menu\MenuItem;
+use SumoCoders\FrameworkExampleBundle\Form\Type\ButtonIconType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\CollectionsType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
@@ -33,7 +34,20 @@ class TutorialController extends Controller
      */
     public function labelsAction()
     {
-        $form = $this->createForm(new LabelsType);
+        $form = $this->createForm(new LabelsType());
+
+        return array(
+            'form' => $form->createView(),
+        );
+    }
+
+    /**
+     * @Route("/tutorial/button-icons")
+     * @Template()
+     */
+    public function buttonIconsAction()
+    {
+        $form = $this->createForm(new ButtonIconType());
 
         return array(
             'form' => $form->createView(),
