@@ -25,12 +25,4 @@ class ButtonIconType extends AbstractType
             ]
         );
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'buttonIcons';
-    }
 }

@@ -95,12 +95,4 @@ class LabelsType extends AbstractType
                 )
             );
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'labels';
-    }
 }

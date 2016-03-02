@@ -37,12 +37,4 @@ class CollectionsType extends AbstractType
                 )
             );
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'collections';
-    }
 }

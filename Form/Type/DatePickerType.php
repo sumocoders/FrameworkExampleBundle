@@ -198,12 +198,4 @@ class DatePickerType extends AbstractType
             )
         ;
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'datePicker';
-    }
 }
