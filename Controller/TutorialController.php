@@ -8,9 +8,9 @@ use SumoCoders\FrameworkExampleBundle\Form\Type\CollectionsType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Component\HttpFoundation\Request;
 
 class TutorialController extends Controller
 {
@@ -21,7 +21,7 @@ class TutorialController extends Controller
      */
     public function datePickerAction()
     {
-        $form = $this->createForm(new DatePickerType());
+        $form = $this->createForm(DatePickerType::class);
 
         return array(
             'form' => $form->createView(),
@@ -34,7 +34,7 @@ class TutorialController extends Controller
      */
     public function labelsAction()
     {
-        $form = $this->createForm(new LabelsType());
+        $form = $this->createForm(LabelsType::class);
 
         return array(
             'form' => $form->createView(),
@@ -47,7 +47,7 @@ class TutorialController extends Controller
      */
     public function buttonIconsAction()
     {
-        $form = $this->createForm(new ButtonIconType());
+        $form = $this->createForm(ButtonIconType::class);
 
         return array(
             'form' => $form->createView(),
@@ -97,7 +97,7 @@ class TutorialController extends Controller
      */
     public function collectionsAction()
     {
-        $form = $this->createForm(new CollectionsType());
+        $form = $this->createForm(CollectionsType::class);
 
         return array(
             'form' => $form->createView(),

@@ -3,6 +3,7 @@
 namespace SumoCoders\FrameworkExampleBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class ButtonIconType extends AbstractType
@@ -14,7 +15,7 @@ class ButtonIconType extends AbstractType
     {
         $builder->add(
             'example',
-            'submit',
+            SubmitType::class,
             [
                 'label' => 'Bug',
                 'icon' => 'fa fa-bug',
