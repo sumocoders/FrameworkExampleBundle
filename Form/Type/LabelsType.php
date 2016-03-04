@@ -3,6 +3,7 @@
 namespace SumoCoders\FrameworkExampleBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class LabelsType extends AbstractType
@@ -20,7 +21,7 @@ class LabelsType extends AbstractType
         $builder
             ->add(
                 'label_example_with_help_block_1',
-                'text',
+                TextType::class,
                 array(
                     'help_block' => 'Block help text, can inlude <strong>HTML formatting</strong>',
                     'attr' => array(
@@ -30,7 +31,7 @@ class LabelsType extends AbstractType
             )
             ->add(
                 'label_example_with_help_label',
-                'text',
+                TextType::class,
                 array(
                     'help_label' => 'Label help text',
                     'attr' => array(
@@ -40,7 +41,7 @@ class LabelsType extends AbstractType
             )
             ->add(
                 'label_example_with_tooltip',
-                'text',
+                TextType::class,
                 array(
                     'required' => false,
                     'help_label_tooltip' => array(
@@ -53,7 +54,7 @@ class LabelsType extends AbstractType
             )
             ->add(
                 'label_example_with_tooltip_without_icon',
-                'text',
+                TextType::class,
                 array(
                     'help_label_tooltip' => array(
                         'title' => 'Label tooltip text',
@@ -67,7 +68,7 @@ class LabelsType extends AbstractType
             )
             ->add(
                 'label_example_with_popover',
-                'text',
+                TextType::class,
                 array(
                     'help_label_popover' => array(
                         'title' => 'Label popover title',
@@ -80,7 +81,7 @@ class LabelsType extends AbstractType
             )
             ->add(
                 'label_example_with_popover_and_options',
-                'text',
+                TextType::class,
                 array(
                     'help_label_popover' => array(
                         'title' => 'Label popover title to the right',
@@ -93,13 +94,5 @@ class LabelsType extends AbstractType
                     )
                 )
             );
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'labels';
     }
 }

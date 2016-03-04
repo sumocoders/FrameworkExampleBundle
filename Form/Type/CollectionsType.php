@@ -3,6 +3,8 @@
 namespace SumoCoders\FrameworkExampleBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
+use Symfony\Component\Form\Extension\Core\Type\LanguageType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class CollectionsType extends AbstractType
@@ -15,32 +17,24 @@ class CollectionsType extends AbstractType
         $builder
             ->add(
                 'languages',
-                'collection',
+                CollectionType::class,
                 array(
-                    'type' => 'language',
+                    'entry_type' => LanguageType::class,
                     'allow_add' => true,
                     'allow_delete' => true,
                 )
             )
             ->add(
                 'languages_without_label',
-                'collection',
+                CollectionType::class,
                 array(
-                    'type' => 'language',
+                    'entry_type' => LanguageType::class,
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'options' => array(
+                    'entry_options' => array(
                         'label_render' => false,
                     )
                 )
             );
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'collections';
     }
 }

@@ -1,6 +1,5 @@
 composer.lock
-coverage.clover
-coverage.xml
+coverage.*
 /Tests/Controller/App/cache
 /Tests/Controller/App/logs
 /vendor/
