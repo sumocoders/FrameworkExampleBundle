@@ -7,6 +7,7 @@ example:
       hello: hello %name%
       labels: labels
       buttonIcons: button icons
+      sendMail: send mail
 
   menu:
     bootstrap: bootstrap
@@ -19,6 +20,7 @@ example:
     tutorials: tutorials
     statistics: statistics
     buttonIcons: button icons
+    sendMail: send mail
 
 datePicker:
   birthday.example: birthday

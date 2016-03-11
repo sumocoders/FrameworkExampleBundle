@@ -103,4 +103,41 @@ class TutorialController extends Controller
             'form' => $form->createView(),
         );
     }
+
+    /**
+     * @Route("/tutorial/send-mail")
+     * @Template()
+     * @param Request $request
+     * @return array
+     */
+    public function sendMailAction(Request $request)
+    {
+        $form = $this->createFormBuilder()
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // get the message factory so we can create messages
+            $messageFactory = $this->get('framework.message_factory');
+
+            // create a simple message
+            $message = $messageFactory->createHtmlMessage(
+                'the subject',
+                '<p>foo bar</p>'
+            );
+
+            // set some extra properties, just like you would do with a normal \Swift_Message
+            $message->setTo(
+                $this->getParameter('mailer_default_to_email')
+            );
+
+            // send it
+            $this->get('mailer')->send($message);
+        }
+
+        return array(
+            'form' => $form->createView(),
+        );
+    }
 }
