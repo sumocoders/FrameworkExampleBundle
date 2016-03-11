@@ -20,7 +20,7 @@ example:
     buttonIcons: knop iconen
     tutorials: howto's
     statistics: statistics
-    sendMail: email sturen
+    sendMail: email versturen
 
 datePicker:
   birthday.example: geboortedatg
