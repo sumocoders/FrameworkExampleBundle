@@ -8,6 +8,7 @@ example:
       labels: labels
       buttonIcons: knop iconen
       sendMail: email sturen
+      fieldset: fieldset
 
   menu:
     bootstrap: bootstrap
@@ -21,6 +22,7 @@ example:
     tutorials: howto's
     statistics: statistics
     sendMail: email versturen
+    fieldset: fieldset
 
 datePicker:
   birthday.example: geboortedatg
@@ -30,6 +32,8 @@ datePicker:
 
 labels:
   label:
+    example.fieldset.name: fieldset legend
+    example.fieldset.input: input in fieldset
     example.with.help.block: met help block
     example.with.help.label: met help label
     example.with.tooltip: met tooltip
