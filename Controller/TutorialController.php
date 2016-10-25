@@ -6,6 +6,7 @@ use Knp\Menu\MenuItem;
 use SumoCoders\FrameworkExampleBundle\Form\Type\ButtonIconType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\CollectionsType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\DatePickerType;
+use SumoCoders\FrameworkExampleBundle\Form\Type\FieldsetType;
 use SumoCoders\FrameworkExampleBundle\Form\Type\LabelsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -48,6 +49,19 @@ class TutorialController extends Controller
     public function buttonIconsAction()
     {
         $form = $this->createForm(ButtonIconType::class);
+
+        return array(
+            'form' => $form->createView(),
+        );
+    }
+
+    /**
+     * @Route("/tutorial/fieldset")
+     * @Template()
+     */
+    public function fieldsetAction()
+    {
+        $form = $this->createForm(FieldsetType::class);
 
         return array(
             'form' => $form->createView(),

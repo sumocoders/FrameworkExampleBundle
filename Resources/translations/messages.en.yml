@@ -8,6 +8,7 @@ example:
       labels: labels
       buttonIcons: button icons
       sendMail: send mail
+      fieldset: fieldset
 
   menu:
     bootstrap: bootstrap
@@ -21,6 +22,7 @@ example:
     statistics: statistics
     buttonIcons: button icons
     sendMail: send mail
+    fieldset: fieldset
 
 datePicker:
   birthday.example: birthday
@@ -30,6 +32,8 @@ datePicker:
 
 labels:
   label:
+    example.fieldset.name: fieldset legend
+    example.fieldset.input: input inside fieldset
     example.with.help.block: with help block
     example.with.help.label: with help label
     example.with.tooltip: with tooltip
