@@ -1,15 +1,29 @@
-class Charts
-  constructor: ->
-    $ =>
-      @initLineChart()
-      @initBarChart()
-      @initRadarChart()
-      @initPolarAreaChart()
-      @initPieChart()
-      @initDoughnutChart()
+export class Charts {
 
-  initLineChart: ->
-    data = {
+  constructor(element) {
+    if ($(element).data('type') == "line-chart"){
+      this.initLineChart(element);
+    }
+    else if ($(element).data('type') == "bar-chart"){
+      this.initBarChart(element);
+    }
+    else if ($(element).data('type') == "radar-chart") {
+      this.initRadarChart(element);
+    }
+    else if ($(element).data('type') == 'polar-area-chart') {
+      this.initPolarAreaChart(element);
+    }
+    else if ($(element).data('type') == 'pie-chart') {
+      this.initPieChart(element);
+    }
+    else if ($(element).data('type') == 'doughnut-chart') {
+      this.initDoughnutChart(element);
+    }
+  }
+
+  initLineChart(element) {
+    let $lineChart = $(element);
+    let data = {
       labels: ["January", "February", "March", "April", "May", "June", "July"],
       datasets: [
         {
@@ -33,20 +47,20 @@ class Charts
           data: [28, 48, 40, 19, 86, 27, 90]
         }
       ]
-    }
-
-    options = {
+    };
+    let options = {
       responsive: true,
+    };
+
+    if ($lineChart.length > 0) {
+      let myLineChart;
+      let ctx = $lineChart[0].getContext('2d');
+      return myLineChart = new Chart(ctx).Line(data, options);
     }
+  }
 
-    $lineChart = $('#line-chart')
-
-    if $lineChart.length > 0
-      ctx = $lineChart[0].getContext('2d')
-      myLineChart = new Chart(ctx).Line(data, options)
-
-  initBarChart: ->
-    data = {
+  initBarChart(element) {
+    let data = {
       labels: ["January", "February", "March", "April", "May", "June", "July"],
       datasets: [
         {
@@ -66,20 +80,23 @@ class Charts
           data: [28, 48, 40, 19, 86, 27, 90]
         }
       ]
-    }
+    };
 
-    options = {
+    let options = {
       responsive: true,
+    };
+
+    let $barChart = $(element);
+
+    if ($barChart.length > 0) {
+      let myBarChart;
+      let ctx = $barChart[0].getContext('2d');
+      return myBarChart = new Chart(ctx).Bar(data, options);
     }
+  }
 
-    $barChart = $('#bar-chart')
-
-    if $barChart.length > 0
-      ctx = $barChart[0].getContext('2d')
-      myBarChart = new Chart(ctx).Bar(data, options)
-
-  initRadarChart: ->
-    data = {
+  initRadarChart(element) {
+    let data = {
       labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
       datasets: [
         {
@@ -103,20 +120,23 @@ class Charts
           data: [28, 48, 40, 19, 96, 27, 100]
         }
       ]
-    }
+    };
 
-    options = {
+    let options = {
       responsive: true,
+    };
+
+    let $radarChart = $(element);
+
+    if ($radarChart.length > 0) {
+      let myRadarChart;
+      let ctx = $radarChart[0].getContext('2d');
+      return myRadarChart = new Chart(ctx).Radar(data, options);
     }
+  }
 
-    $radarChart = $('#radar-chart')
-
-    if $radarChart.length > 0
-      ctx = $radarChart[0].getContext('2d')
-      myRadarChart = new Chart(ctx).Radar(data, options)
-
-  initPolarAreaChart: ->
-    data = [
+  initPolarAreaChart(element) {
+    let data = [
       {
         value: 300,
         color:"#F7464A",
@@ -147,20 +167,23 @@ class Charts
         highlight: "#616774",
         label: "Dark Grey"
       }
-    ]
+    ];
 
-    options = {
+    let options = {
       responsive: true,
+    };
+
+    let $polarChart = $(element);
+
+    if ($polarChart.length > 0) {
+      let myPolarAreaChart;
+      let ctx = $polarChart[0].getContext('2d');
+      return myPolarAreaChart = new Chart(ctx).PolarArea(data, options);
     }
+  }
 
-    $polarChart = $('#polar-area-chart')
-
-    if $polarChart.length > 0
-      ctx = $polarChart[0].getContext('2d')
-      myPolarAreaChart = new Chart(ctx).PolarArea(data, options)
-
-  initPieChart: ->
-    data = [
+  initPieChart(element) {
+    let data = [
       {
         value: 300,
         color:"#F7464A",
@@ -179,21 +202,24 @@ class Charts
         highlight: "#FFC870",
         label: "Yellow"
       }
-    ]
+    ];
 
-    options = {
+    let options = {
       responsive: true,
       showTooltips: false,
+    };
+
+    let $pieChart = $(element);
+
+    if ($pieChart.length > 0) {
+      let myPieChart;
+      let ctx = $pieChart[0].getContext('2d');
+      return myPieChart = new Chart(ctx).Pie(data, options);
     }
+  }
 
-    $pieChart = $('#pie-chart')
-
-    if $pieChart.length > 0
-      ctx = $pieChart[0].getContext('2d')
-      myPieChart = new Chart(ctx).Pie(data, options)
-
-  initDoughnutChart: ->
-    data = [
+  initDoughnutChart(element) {
+    let data = [
       {
         value: 300,
         color:"#F7464A",
@@ -212,19 +238,22 @@ class Charts
         highlight: "#FFC870",
         label: "Yellow"
       }
-    ]
+    ];
 
-    options = {
+    let options = {
       responsive: true,
+    };
+
+    let $doughnutChart = $(element);
+
+    if ($doughnutChart.length > 0) {
+      let myDoughnutChart;
+      let ctx = $doughnutChart[0].getContext('2d');
+      return myDoughnutChart = new Chart(ctx).Doughnut(data, options);
     }
+  }
+}
 
-    $doughnutChart = $('#doughnut-chart')
-
-    if $doughnutChart.length > 0
-      ctx = $doughnutChart[0].getContext('2d')
-      myDoughnutChart = new Chart(ctx).Doughnut(data, options)
-
-
-Charts.current = new Charts()
-
-window.Charts = Charts
+$('.chart').each((index, element) => {
+  element.chart = new Charts($(element));
+});
