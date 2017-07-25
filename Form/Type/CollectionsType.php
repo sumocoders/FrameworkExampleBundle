@@ -22,6 +22,9 @@ class CollectionsType extends AbstractType
                     'entry_type' => LanguageType::class,
                     'allow_add' => true,
                     'allow_delete' => true,
+                    'entry_options' => [
+                        'horizontal_label_class' => '',
+                    ]
                 )
             )
             ->add(
@@ -33,7 +36,9 @@ class CollectionsType extends AbstractType
                     'allow_delete' => true,
                     'entry_options' => array(
                         'label_render' => false,
-                    )
+                        'horizontal_input_wrapper_class' => 'col-sm-9',
+                        'horizontal_label_offset_class' => '',
+                    ),
                 )
             );
     }
