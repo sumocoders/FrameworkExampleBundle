@@ -1,41 +1,40 @@
 export class AutoComplete {
-
-  constructor() {
-    this.initAutoComplete();
+  constructor () {
+    this.initAutoComplete()
   }
 
-  getData() {
+  getData () {
     return [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
+      'ActionScript',
+      'AppleScript',
+      'Asp',
+      'BASIC',
+      'C',
+      'C++',
+      'Clojure',
+      'COBOL',
+      'ColdFusion',
+      'Erlang',
+      'Fortran',
+      'Groovy',
+      'Haskell',
+      'Java',
+      'JavaScript',
+      'Lisp',
+      'Perl',
+      'PHP',
+      'Python',
+      'Ruby',
+      'Scala',
+      'Scheme'
+    ]
   }
 
-  initAutoComplete() {
+  initAutoComplete () {
     $('#autocomplete-example').autocomplete({
-        source: this.getData()
-    }
-  )}
+      source: this.getData()
+    })
+  }
 }
 
-new AutoComplete();
+window.autoComplete = new AutoComplete()
