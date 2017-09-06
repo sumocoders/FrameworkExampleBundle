@@ -64,7 +64,6 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'normal',
                     'required' => false,
                 )
             )
@@ -75,7 +74,6 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'start',
                     'minimum_date' => new \DateTime('last monday'),
                     'required' => false,
                 )
@@ -87,7 +85,6 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'until',
                     'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
                 )
@@ -99,7 +96,6 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'range',
                     'minimum_date' => new \DateTime('last monday'),
                     'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
