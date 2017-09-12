@@ -104,15 +104,6 @@ class DatePickerType extends AbstractType
                 )
             )
             ->add(
-                'datetime_example2',
-                DateTimeType::class,
-                array(
-                    'data' => $currentDate,
-                    'widget' => 'text',
-                    'required' => false,
-                )
-            )
-            ->add(
                 'datetime_example3',
                 DateTimeType::class,
                 array(
