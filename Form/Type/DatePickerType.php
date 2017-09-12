@@ -31,15 +31,6 @@ class DatePickerType extends AbstractType
                 )
             )
             ->add(
-                'date_example2',
-                DateType::class,
-                array(
-                    'data' => $currentDate,
-                    'widget' => 'text',
-                    'required' => false,
-                )
-            )
-            ->add(
                 'date_example3',
                 DateType::class,
                 array(
@@ -140,15 +131,6 @@ class DatePickerType extends AbstractType
                 )
             )
             ->add(
-                'time_example2',
-                TimeType::class,
-                array(
-                    'data' => $currentDate,
-                    'widget' => 'text',
-                    'required' => false,
-                )
-            )
-            ->add(
                 'time_example3',
                 TimeType::class,
                 array(
@@ -164,15 +146,6 @@ class DatePickerType extends AbstractType
                     'format' => DateType::DEFAULT_FORMAT,
                     'data' => $dateInThePast,
                     'widget' => 'choice',
-                    'required' => false,
-                )
-            )
-            ->add(
-                'birthday_example2',
-                BirthdayType::class,
-                array(
-                    'data' => $dateInThePast,
-                    'widget' => 'text',
                     'required' => false,
                 )
             )
