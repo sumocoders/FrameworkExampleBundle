@@ -29,7 +29,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.date_example3) }}
+  {{ form_row(form.date_example2) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -41,7 +41,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.date_example4) }}
+  {{ form_row(form.date_example3) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -51,6 +51,19 @@
   'datepicker' => true,
   'required' => false,
         </code></pre>
+    </div>
+  </div>
+  {{ form_row(form.date_example4) }}
+
+  <div class="row">
+    <div class="col-md-9 col-md-offset-3">
+          <pre><code>
+  'data' => $currentDate,
+  'widget' => 'single_text',
+  'datepicker' => true,
+  'minimum_date' => new \DateTime('last monday'),
+  'required' => false,
+          </code></pre>
     </div>
   </div>
   {{ form_row(form.date_example5) }}
@@ -61,25 +74,12 @@
   'data' => $currentDate,
   'widget' => 'single_text',
   'datepicker' => true,
-  'minimum_date' => new \DateTime('last monday'),
-  'required' => false,
-          </code></pre>
-    </div>
-  </div>
-  {{ form_row(form.date_example6) }}
-
-  <div class="row">
-    <div class="col-md-9 col-md-offset-3">
-          <pre><code>
-  'data' => $currentDate,
-  'widget' => 'single_text',
-  'datepicker' => true,
   'maximum_date' => new \DateTime('next friday'),
   'required' => false,
           </code></pre>
     </div>
   </div>
-  {{ form_row(form.date_example7) }}
+  {{ form_row(form.date_example6) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -93,7 +93,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.date_example8) }}
+  {{ form_row(form.date_example7) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -116,7 +116,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.datetime_example3) }}
+  {{ form_row(form.datetime_example2) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -138,7 +138,7 @@
           </code></pre>
     </div>
   </div>
-  {{ form_row(form.time_example3) }}
+  {{ form_row(form.time_example2) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -161,7 +161,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.birthday_example3) }}
+  {{ form_row(form.birthday_example2) }}
 
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
@@ -173,7 +173,7 @@
         </code></pre>
     </div>
   </div>
-  {{ form_row(form.birthday_example4) }}
+  {{ form_row(form.birthday_example3) }}
 
   {{ form_widget(form) }}
   {{ form_end(form) }}
