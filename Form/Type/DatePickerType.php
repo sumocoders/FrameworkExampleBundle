@@ -28,6 +28,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -37,6 +38,7 @@ class DatePickerType extends AbstractType
                     'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -47,6 +49,7 @@ class DatePickerType extends AbstractType
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -57,6 +60,7 @@ class DatePickerType extends AbstractType
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -68,6 +72,7 @@ class DatePickerType extends AbstractType
                     'datepicker' => true,
                     'minimum_date' => new \DateTime('last monday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -79,6 +84,7 @@ class DatePickerType extends AbstractType
                     'datepicker' => true,
                     'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -91,6 +97,7 @@ class DatePickerType extends AbstractType
                     'minimum_date' => new \DateTime('last monday'),
                     'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -101,6 +108,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.datetime.example',
                 )
             )
             ->add(
@@ -110,6 +118,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.datetime.example',
                 )
             )
             ->add(
@@ -119,6 +128,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.time.example',
                 )
             )
             ->add(
@@ -128,6 +138,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.time.example',
                 )
             )
             ->add(
@@ -138,6 +149,7 @@ class DatePickerType extends AbstractType
                     'data' => $dateInThePast,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
             ->add(
@@ -147,6 +159,7 @@ class DatePickerType extends AbstractType
                     'data' => $dateInThePast,
                     'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
             ->add(
@@ -157,6 +170,7 @@ class DatePickerType extends AbstractType
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
         ;
