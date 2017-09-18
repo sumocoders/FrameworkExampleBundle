@@ -2,6 +2,7 @@
 
 namespace SumoCoders\FrameworkExampleBundle\Form\Type;
 
+use IntlDateFormatter;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
@@ -24,7 +25,7 @@ class DatePickerType extends AbstractType
                 'date_example1',
                 DateType::class,
                 array(
-                    'format' => DateType::DEFAULT_FORMAT,
+                    'format' => IntlDateFormatter::LONG,
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
@@ -104,7 +105,7 @@ class DatePickerType extends AbstractType
                 'datetime_example1',
                 DateTimeType::class,
                 array(
-                    'date_format' => DateTimeType::DEFAULT_DATE_FORMAT,
+                    'date_format' => IntlDateFormatter::LONG,
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
@@ -145,7 +146,7 @@ class DatePickerType extends AbstractType
                 'birthday_example1',
                 BirthdayType::class,
                 array(
-                    'format' => DateType::DEFAULT_FORMAT,
+                    'format' => IntlDateFormatter::LONG,
                     'data' => $dateInThePast,
                     'widget' => 'choice',
                     'required' => false,
