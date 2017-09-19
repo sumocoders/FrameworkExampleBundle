@@ -119,6 +119,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
+                    'datetimepicker' => true,
                     'label' => 'datePicker.datetime.example',
                 )
             )
