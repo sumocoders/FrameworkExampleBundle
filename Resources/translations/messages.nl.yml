@@ -25,7 +25,7 @@ example:
     fieldset: fieldset
 
 datePicker:
-  birthday.example: geboortedatg
+  birthday.example: geboortedag
   date.example: datum
   datetime.example: datum en tijd
   time.example: tijd

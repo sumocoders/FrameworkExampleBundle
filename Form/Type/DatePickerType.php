@@ -2,6 +2,7 @@
 
 namespace SumoCoders\FrameworkExampleBundle\Form\Type;
 
+use IntlDateFormatter;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
@@ -24,18 +25,21 @@ class DatePickerType extends AbstractType
                 'date_example1',
                 DateType::class,
                 array(
+                    'format' => IntlDateFormatter::LONG,
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
                 'date_example2',
                 DateType::class,
                 array(
-                    'data' => $currentDate,
-                    'widget' => 'text',
+                    'data' => $dateInThePast,
+                    'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -44,17 +48,20 @@ class DatePickerType extends AbstractType
                 array(
                     'data' => $dateInThePast,
                     'widget' => 'single_text',
+                    'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
                 'date_example4',
                 DateType::class,
                 array(
-                    'data' => $dateInThePast,
+                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -64,8 +71,9 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'normal',
+                    'minimum_date' => new \DateTime('last monday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -75,9 +83,9 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'start',
-                    'minimum_date' => new \DateTime('last monday'),
+                    'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
@@ -87,31 +95,21 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'single_text',
                     'datepicker' => true,
-                    'date_type' => 'until',
-                    'maximum_date' => new \DateTime('next friday'),
-                    'required' => false,
-                )
-            )
-            ->add(
-                'date_example8',
-                DateType::class,
-                array(
-                    'data' => $currentDate,
-                    'widget' => 'single_text',
-                    'datepicker' => true,
-                    'date_type' => 'range',
                     'minimum_date' => new \DateTime('last monday'),
                     'maximum_date' => new \DateTime('next friday'),
                     'required' => false,
+                    'label' => 'datePicker.date.example',
                 )
             )
             ->add(
                 'datetime_example1',
                 DateTimeType::class,
                 array(
+                    'date_format' => IntlDateFormatter::LONG,
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.datetime.example',
                 )
             )
             ->add(
@@ -119,17 +117,10 @@ class DatePickerType extends AbstractType
                 DateTimeType::class,
                 array(
                     'data' => $currentDate,
-                    'widget' => 'text',
-                    'required' => false,
-                )
-            )
-            ->add(
-                'datetime_example3',
-                DateTimeType::class,
-                array(
-                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
+                    'datetimepicker' => true,
+                    'label' => 'datePicker.datetime.example',
                 )
             )
             ->add(
@@ -139,6 +130,7 @@ class DatePickerType extends AbstractType
                     'data' => $currentDate,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.time.example',
                 )
             )
             ->add(
@@ -146,26 +138,20 @@ class DatePickerType extends AbstractType
                 TimeType::class,
                 array(
                     'data' => $currentDate,
-                    'widget' => 'text',
-                    'required' => false,
-                )
-            )
-            ->add(
-                'time_example3',
-                TimeType::class,
-                array(
-                    'data' => $currentDate,
                     'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.time.example',
                 )
             )
             ->add(
                 'birthday_example1',
                 BirthdayType::class,
                 array(
+                    'format' => IntlDateFormatter::LONG,
                     'data' => $dateInThePast,
                     'widget' => 'choice',
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
             ->add(
@@ -173,8 +159,9 @@ class DatePickerType extends AbstractType
                 BirthdayType::class,
                 array(
                     'data' => $dateInThePast,
-                    'widget' => 'text',
+                    'widget' => 'single_text',
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
             ->add(
@@ -183,17 +170,9 @@ class DatePickerType extends AbstractType
                 array(
                     'data' => $dateInThePast,
                     'widget' => 'single_text',
-                    'required' => false,
-                )
-            )
-            ->add(
-                'birthday_example4',
-                BirthdayType::class,
-                array(
-                    'data' => $dateInThePast,
-                    'widget' => 'single_text',
                     'datepicker' => true,
                     'required' => false,
+                    'label' => 'datePicker.birthday.example',
                 )
             )
         ;
